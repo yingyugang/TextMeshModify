@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface ITextMeshMotion
+﻿namespace BlueNoah
 {
-    void StartMotion();
+	/// <summary>
+	/// テキストを変形
+	/// </summary>
+	public interface ITextMeshMotion
+	{
+		void StartMotion(string text);
+	}
 }

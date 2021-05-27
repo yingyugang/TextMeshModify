@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace BlueNoah
@@ -14,9 +14,13 @@ namespace BlueNoah
         [SerializeField]
         TextMeshModify textMeshModify;
 
+        [SerializeField]
+        TextMeshMotionBase textMeshSpira;
+        [SerializeField]
+        TextMeshMotionBase textMeshSpiral;
 
         [SerializeField]
-        TextMeshBase textMeshSpiral;
+        string currentText = "";
 
         private void Awake()
         {
@@ -26,11 +30,11 @@ namespace BlueNoah
             });
             circleButton1.onClick.AddListener(() =>
             {
-                textMeshModify.StartCircle1();
+                textMeshSpira.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
             });
             spiralButton.onClick.AddListener(() =>
             {
-                textMeshSpiral.StartMotion();
+                textMeshSpiral.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
             });
         }
     }
