@@ -6,35 +6,46 @@ namespace BlueNoah
     public class TextMeshModifyExample : MonoBehaviour
     {
         [SerializeField]
-        public Button circleButton;
+        public Button straightButton;
         [SerializeField]
-        public Button circleButton1;
+        public Button straightAsyncButton;
         [SerializeField]
         public Button spiralButton;
+        [SerializeField]
+        public Button spiralButton1;
         [SerializeField]
         TextMeshModify textMeshModify;
 
         [SerializeField]
-        TextMeshMotionBase textMeshSpira;
+        TextMeshMotionBase textMeshStraightLine;
         [SerializeField]
         TextMeshMotionBase textMeshSpiral;
+        [SerializeField]
+        TextMeshMotionBase textMeshSpiral1;
+        [SerializeField]
+        TextMeshMotionBase textMeshStraightLineAsync;
 
         [SerializeField]
         string currentText = "";
 
         private void Awake()
         {
-            circleButton.onClick.AddListener(() =>
+            Application.targetFrameRate = 30;
+            straightButton.onClick.AddListener(() =>
             {
-                textMeshModify.StartCircle();
+                textMeshStraightLine.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
             });
-            circleButton1.onClick.AddListener(() =>
+            straightAsyncButton.onClick.AddListener(() =>
             {
-                textMeshSpira.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
+                textMeshStraightLineAsync.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
             });
             spiralButton.onClick.AddListener(() =>
             {
                 textMeshSpiral.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
+            });
+            spiralButton1.onClick.AddListener(() =>
+            {
+                textMeshSpiral1.StartMotion("TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1TOEIC 600点：総仕上げ1");
             });
         }
     }
