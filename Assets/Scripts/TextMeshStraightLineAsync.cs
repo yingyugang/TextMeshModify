@@ -15,7 +15,7 @@ namespace BlueNoah
         CancellationTokenSource moveToken;
         CancellationTokenSource colorToken;
 
-        public override async void StartMotion(string text)
+        public override async void StartMotion(string text, bool isLoop, System.Action onTerminal)
         {
             moveToken?.Cancel();
             colorToken?.Cancel();

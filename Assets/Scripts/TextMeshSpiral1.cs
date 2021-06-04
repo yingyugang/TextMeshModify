@@ -17,7 +17,7 @@ namespace BlueNoah
         public float displayEndHeight = 10f;
         public float vanishStartHeight = 40f;
         public float vanishEndHeight = 50f;
-        public override void StartMotion(string text)
+        public override void StartMotion(string text,bool isLoop, System.Action onTerminal)
         {
             Reset();
             coroutine = StartCoroutine(Spiral(text));

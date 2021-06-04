@@ -5,6 +5,6 @@
 	/// </summary>
 	public interface ITextMeshMotion
 	{
-		void StartMotion(string text);
+		void StartMotion(string text, bool isLoop, System.Action onTerminal);
 	}
 }
