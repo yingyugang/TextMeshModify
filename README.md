@@ -1,9 +1,11 @@
 
+
 Get the Vertics and Vertics color from the TextMeshPro,and modify them.
 
 Include sprial and straight line.
 
 
+https://user-images.githubusercontent.com/3383920/121638781-80e8ae00-cac6-11eb-9e70-15796e1578f7.mov
 
 
 给TextMeshPro变形
