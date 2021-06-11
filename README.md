@@ -11,4 +11,4 @@ Include sprial and straight line.
 https://zhuanlan.zhihu.com/p/375020971
 
 
-![alt text](https://pic2.zhimg.com/80/v2-e7735471144a7cd14e6b08bcd6df09bd_720w.jpg)
+![alt text](https://yingyugang.s3.ap-northeast-1.amazonaws.com/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2021-06-11+143358.png)
