@@ -9,7 +9,7 @@ namespace BlueNoah
         [SerializeField]
         public Button straightButton;
         [SerializeField]
-        public Button straightAsyncButton;
+        public Button straightButton1;
         [SerializeField]
         public Button spiralButton;
         [SerializeField]
@@ -29,7 +29,7 @@ namespace BlueNoah
         [SerializeField]
         TextMeshMotionBase textMeshSpiral1;
         [SerializeField]
-        TextMeshMotionBase textMeshStraightLineAsync;
+        TextMeshMotionBase textMeshStraight1;
 
         [SerializeField]
         string currentText = "TOEIC 600点TOEIC 600点TOEIC 600点TOEIC 600点TOEIC 600点TOEIC 600点";
@@ -41,9 +41,9 @@ namespace BlueNoah
             {
                 textMeshStraightLine.StartMotion(currentText, true,()=> { });
             });
-            straightAsyncButton.onClick.AddListener(() =>
+            straightButton1.onClick.AddListener(() =>
             {
-                textMeshStraightLineAsync.StartMotion(currentText, true, () => { });
+                textMeshStraight1.StartMotion(currentText, true, () => { });
             });
             spiralButton.onClick.AddListener(() =>
             {
@@ -59,6 +59,7 @@ namespace BlueNoah
         {
 #if UNITY_EDITOR
             textMeshStraightLine.StartMotion(currentText, true, () => { });
+            textMeshStraight1.StartMotion(currentText, true, () => { });
             textMeshSpiral.StartMotion(currentText, true, () => { });
             textMeshSpiral1.StartMotion(currentText, true, () => { });
 #endif
