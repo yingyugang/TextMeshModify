@@ -66,7 +66,8 @@ namespace BlueNoah
         }
         private void LateUpdate()
         {
-            UpdateTextCharactor();
+            if(inputFieldText!= null && inputFieldText.gameObject.activeInHierarchy)
+                UpdateTextCharactor();
         }
 
         TMP_Text tmpText;

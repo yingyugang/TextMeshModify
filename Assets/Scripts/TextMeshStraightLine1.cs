@@ -29,7 +29,7 @@ namespace BlueNoah
 			Reset();
 			this.isLoop = isLoop;
 			coroutine = StartCoroutine(StraightLine(text));
-			colorCoroutine = StartCoroutine(AnimateVertexColors());
+			//colorCoroutine = StartCoroutine(AnimateVertexColors());
 		}
 
 		IEnumerator StraightLine(string text)
